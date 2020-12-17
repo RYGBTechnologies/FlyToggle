@@ -1,0 +1,17 @@
+main: com.redblock6.flytoggle.FlyTogglePlugin
+name: FLYTOGGLE
+version: '1.1.3'
+description: Toggles your fly
+author: Redblock6
+website: mcredblock.wixsite.com/redblock6
+commands:
+    fly:
+      description: Toggles your fly ON or OFF
+      permission: flytoggle.fly
+      permission-message: Im sorry, but you dont have permission to use this command!
+    flytoggle:
+      description: The fly toggle help page!
+ 
+permissions:
+  flytoggle.fly:
+   description: Allows you to use /fly

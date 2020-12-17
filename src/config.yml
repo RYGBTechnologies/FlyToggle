@@ -1,0 +1,6 @@
+#Message run when console tries to execute '/fly'
+console_error_message: '&a[&c&lFLY TOGGLE&a] &eOnly &cPLAYERS &ecan use this &cCOMMAND&e!'
+
+#Fly command Below!
+flying_enabled: '&aSet fly mode to &lENABLED'
+flying_disabled: '&aSet fly mode to &c&lDISABLED'
