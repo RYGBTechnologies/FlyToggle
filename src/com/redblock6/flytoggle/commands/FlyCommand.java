@@ -1,8 +1,11 @@
 package com.redblock6.flytoggle.commands;
 
-import org.bukkit.command.Command;      
+import net.minecraft.server.v1_8_R3.IChatBaseComponent;
+import net.minecraft.server.v1_8_R3.PacketPlayOutTitle;
+import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import com.redblock6.flytoggle.FlyTogglePlugin;
 import com.redblock6.flytoggle.utils.Utils;
@@ -32,10 +35,14 @@ public boolean onCommand(CommandSender sender, Command cmd, String label, String
 			p.setFlying(false);
 			p.setAllowFlight(false);
 			p.sendMessage(Utils.chat(plugin.getConfig().getString("flying_disabled")));
+			PacketPlayOutTitle title = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.TITLE, IChatBaseComponent.ChatSerializer.a("{\"text\":\"§4§lFLY DISABLED\"}"), 10, 0, 10);
+			((CraftPlayer) p).getHandle().playerConnection.sendPacket(title);
 			return true;
 		} else {
 			p.setAllowFlight(true);
 			p.sendMessage(Utils.chat(plugin.getConfig().getString("flying_enabled")));
+			PacketPlayOutTitle title = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.TITLE, IChatBaseComponent.ChatSerializer.a("{\"text\":\"§2§lFLY ENABLED\"}"), 10, 0, 10);
+			((CraftPlayer) p).getHandle().playerConnection.sendPacket(title);
 			return true;
 		}
 	}
