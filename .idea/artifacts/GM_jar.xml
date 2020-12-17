@@ -3,8 +3,6 @@
     <output-path>$PROJECT_DIR$/classes/artifacts/GM_jar</output-path>
     <root id="archive" name="GM.jar">
       <element id="module-output" name="GM" />
-      <element id="extracted-dir" path="$USER_HOME$/Downloads/spigot-1.8.8-R0.1-SNAPSHOT-latest (4).jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/Downloads/Paper (4).jar" path-in-jar="/" />
       <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
     </root>
   </artifact>
