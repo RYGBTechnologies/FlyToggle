@@ -13,10 +13,12 @@ public class HelpCommand implements CommandExecutor {
 		if (cmd.getName().equalsIgnoreCase("flytoggle")) {
 			if (sender instanceof Player) {
 				Player player = (Player) sender;
-				player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&a-------------------&e&lFLY TOGGLE&a-------------------"));
-				player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b- &c/fly &eThis will toggle your fly &aON &eor &cOFF&e!"));
-				player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b- &c/flytoggle &eThis will display this very message!"));
-				player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&a----------------------------------------------------"));
+				player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&2&m--------------------------------------"));
+				player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&2&lFLY TOGGLE"));
+				player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7"));
+				player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&2&lCOMMAND &a/fly &fto toggle your fly on or off."));
+				player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&2&lCOMMAND &a/flytoggle &fdisplays the flytoggle help page."));
+				player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&2&m--------------------------------------"));
 				return true;
 			}
 			
