@@ -15,14 +15,14 @@ public class FlyTogglePlugin extends JavaPlugin{
 	public void onEnable() {
 		saveDefaultConfig();
 		new FlyCommand(this);
-		getLogger().info("FlyToggle by Redblock6 has been ENABLED!");
+		getLogger().info("FLY TOGGLE STATUS: Disabled -> Enabled - By Redblock6");
 		this.getCommand("flytoggle").setExecutor(new HelpCommand());
 	}
 
 
 	@Override
 	public void onDisable() {
-		
+		getLogger().info("FLY TOGGLE STATUS: Enabled -> Disabled - See you soon! - By Redblock6");
 		
 	}
 		
