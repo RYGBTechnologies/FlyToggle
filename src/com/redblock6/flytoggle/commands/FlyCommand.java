@@ -27,7 +27,7 @@ public boolean onCommand(CommandSender sender, Command cmd, String label, String
 	}
 	
 	Player p = (Player) sender;
-	if (p.hasPermission("flytoggle.fly")) {
+	if (p.hasPermission("redblock.fly")) {
 		    if (p.getAllowFlight()) {
 			p.setFlying(false);
 			p.setAllowFlight(false);
