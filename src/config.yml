@@ -1,6 +1,6 @@
-#Message run when console tries to execute '/fly'
-console_error_message: '&a[&c&lFLY TOGGLE&a] &eOnly &cPLAYERS &ecan use this &cCOMMAND&e!'
+#The 'only players' message, only sent in the console
+console_error_message: '&2&lWOAH! &fOnly &aplayers &fcan use this command'
 
-#Fly command Below!
-flying_enabled: '&aSet fly mode to &lENABLED'
-flying_disabled: '&aSet fly mode to &c&lDISABLED'
+#Flight messages
+flying_enabled: '&2&lSUCCESS &fSet flight: &4&lDISABLED &f-> &2&lENABLED'
+flying_disabled: '&4&lSUCCESS &fSet flight: &2&lENABLED &f-> &4&lDISABLED'
